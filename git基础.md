@@ -109,3 +109,8 @@ git commit
 ```yaml
 git commit -a -m "msg"
 ```
+# 2.2.9 移除文件
+```yaml
+git rm filename
+```
+![](static/pic/Snip20200131_13.png)
