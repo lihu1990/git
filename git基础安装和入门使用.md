@@ -51,6 +51,9 @@ x64上追加-multiInst
 ## 1.4 查看个人的所有的配置
 ~~~
 git config --list
+~~~
+![](static/pic/Snip20200131_3.png)
+~~~
 git config key[查看某个值得设定]
 ~~~
 
