@@ -1,3 +1,4 @@
+
 ```
 在第一篇目中可以学习了解了git的简单命令。
 本篇介绍使用git的绝大多数用到的基础命令。
@@ -96,6 +97,12 @@ MM 表示已经暂存且已经修改
 
 ```yaml
 git status
+git diff 
+git difftool  #可视化进行区别查看
 ![](static/pic/Snip20200131_12.png)
 ```
+# 2.2.7 提交变更
 
+···yaml
+git commit
+```
