@@ -1,3 +1,4 @@
+[toc]
 # 1、linux上安装
 ~~~ yml
 fedora上安装
