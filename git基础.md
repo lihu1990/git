@@ -114,3 +114,9 @@ git commit -a -m "msg"
 git rm filename
 ```
 ![](static/pic/Snip20200131_13.png)
+```java
+在实际的情况中我们希望某个文件不在服务器上进行跟踪(本地文件不删除，push后远程的删除)
+git rm --cached filename
+```
+![](static/pic/Snip20200131_14.png)
+![](static/pic/Snip20200131_15.png)
