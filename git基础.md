@@ -102,6 +102,6 @@ git difftool  #可视化进行区别查看
 ![](static/pic/Snip20200131_12.png)
 ```
 # 2.2.7 提交变更
-···yaml
+```yaml
 git commit
 ```
