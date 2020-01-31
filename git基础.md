@@ -96,6 +96,6 @@ MM 表示已经暂存且已经修改
 
 ```yaml
 git status
-![](static/pic/Snip20200131_12.png)
 ```
+![](static/pic/Snip20200131_12.png)
 
