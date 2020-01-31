@@ -9,6 +9,7 @@ sudo apt-get install git-all
 ## 1.1 git 首次配置
 自定义git的环境
 只需要在计算机上执行一次即可。
+
 ~~~ 
 执行的命令
 git config 的工具，
