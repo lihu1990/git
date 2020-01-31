@@ -8,7 +8,10 @@
 ```
 获取git仓库的方法有两种。
 a、把现有的项目获取目录导入到git中
+![](static/pic/Snip20200131_5.png)
 b、从服务器上克隆现有的git仓库
+git clone xxxx
+git clone xxxx xxxb
 ```
 
 ## 2.1.1 在现有的项目中初始化git仓库
@@ -41,20 +44,22 @@ git clone https://github.com/lihu1990/readgitbook.git readgitbook
 在跟踪状态又分为未修改、已修改、已暂存
 ```
 
-未修改已修改已暂存未跟踪
+总体状态图
+![](static/pic/Snip20200131_7.png)
 
 ## 2.2.1 查看文件状态
 
 ```
 git status
 ```
-
+![](static/pic/Snip20200131_8.png)
 ## 2.2.2 跟踪新的文件
 
 ```
 git add newfilename
 git status
 ```
+![](static/pic/Snip20200131_9.png)
 
 ## 2.2.3 暂存已经修改的文件
 
@@ -64,6 +69,7 @@ git commit -m '提交暂存的文件'
 在修改完一个文件时候，看到的是等待提交到暂存，
 这个时候又进行内容的修改看到的状态是待提交和待跟踪需要在此进行git add filename
 ```
+
 
 ## 2.2.4 查看简洁的git状态信息
 
@@ -75,9 +81,13 @@ AM 表示未暂存已修改
 M 表示已修改
 MM 表示已经暂存且已经修改
 ```
-
+![](static/pic/Snip20200131_10.png)
 ## 2.2.5 忽略文件
 
-```yml
+```yaml
 .gitignore
+*.xml
+*.log
+*.apk
 ```
+
