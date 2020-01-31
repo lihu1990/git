@@ -120,3 +120,11 @@ git rm --cached filename
 ```
 ![](static/pic/Snip20200131_14.png)
 ![](static/pic/Snip20200131_15.png)
+#  2.2.10 移动文件
+```java
+git mv fromFileName toFileName
+此操作相当于执行如下3条命令
+1、mv fromFileName toFileName
+2、git rm fromFileName
+3、git add toFileName
+```
