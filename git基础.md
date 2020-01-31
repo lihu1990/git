@@ -105,3 +105,7 @@ git difftool  #可视化进行区别查看
 ```yaml
 git commit
 ```
+# 2.2.8 跳过暂存区
+```yaml
+git commit -a -m "msg"
+```
