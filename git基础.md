@@ -93,7 +93,7 @@ MM 表示已经暂存且已经修改
 *.apk
 ```
 
-# 2.2.6 查看已暂存和未暂存的变更
+## 2.2.6 查看已暂存和未暂存的变更
 
 ```yaml
 git status
@@ -101,15 +101,15 @@ git diff
 git difftool  #可视化进行区别查看
 ```
 ![](static/pic/Snip20200131_12.png)
-# 2.2.7 提交变更
+## 2.2.7 提交变更
 ```yaml
 git commit
 ```
-# 2.2.8 跳过暂存区
+## 2.2.8 跳过暂存区
 ```yaml
 git commit -a -m "msg"
 ```
-# 2.2.9 移除文件
+## 2.2.9 移除文件
 ```yaml
 git rm filename
 ```
@@ -120,7 +120,7 @@ git rm --cached filename
 ```
 ![](static/pic/Snip20200131_14.png)
 ![](static/pic/Snip20200131_15.png)
-#  2.2.10 移动文件
+## 2.2.10 移动文件
 ```java
 git mv fromFileName toFileName
 此操作相当于执行如下3条命令
@@ -128,3 +128,9 @@ git mv fromFileName toFileName
 2、git rm fromFileName
 3、git add toFileName
 ```
+# 2.3查看提交历史
+```java
+git log
+默认不加参数的情况下是针对当前的所有的提交的历史进行的展示(时间倒序)
+```
+![](static/pic/Snip20200131_16.png)
