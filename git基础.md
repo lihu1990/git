@@ -45,7 +45,8 @@ git clone https://github.com/lihu1990/readgitbook.git readgitbook
 ```
 
 总体状态图
-![](static/pic/Snip20200131_7.png)
+
+![](static/pic/Snip20200131_7.png)\
 
 ## 2.2.1 查看文件状态
 
@@ -90,4 +91,11 @@ MM 表示已经暂存且已经修改
 *.log
 *.apk
 ```
+
+# 2.2.6 查看已暂存和未暂存的变更
+
+~~~
+git status
+![](static/pic/Snip20200131_12.png)
+~~~
 
