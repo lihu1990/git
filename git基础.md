@@ -173,11 +173,51 @@ git reset HEAD a.t
 
 # 2.5 远程仓库使用
 ## 2.5.1 显示远程仓库
+```java
+git remote
+该命令会列出每个远程仓库的简短名称。默认origin为克隆源服务器取得默认名称
+git remote -v
+该命令会显示出git存储的每个远程仓库对应的url
+```
 ## 2.5.2 添加远程仓库
+```java
+git remote add [shortname] [url]
+shortname 是远程仓库的简短名称，url是远程仓库的地址，就可以用shortname代替url获取完整的数据了
+```
 ## 2.5.3 从远程仓库拉取数据
+```java
+git fetch [remote-name]
+remote-name 是远程仓库的名称【或者说是仓库的简短名称】
+注意，执行此命令，只会将远程仓库中的数据迁出到本地，但不会合并到本地的工作目录，使用git pull 会尝试自动合并。
+git clone命令会自动设置你的本地的master分支，使它跟踪被客户的服务器端的master分支【远程默认分支】。
+```
 ## 2.5.4 将数据推送到远程仓库
+```java
+git push [remote-name] [branch-name]
+将数据推送到远程仓库中。 
+remote-name 使远程仓库的简短名称
+branch-name 使远程分支名称
+默认git push  就是git  push  origin master
+```
 ## 2.5.5 检查远程仓库
+```java
+git  remote show [remote-name]
+git remote show origin
+* remote origin
+  Fetch URL: https://github.com/lihu1990/readgitbook.git
+  Push  URL: https://github.com/lihu1990/readgitbook.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+```
 ## 2.5.6 删除和重命名远程仓库
+```java 
+git remote rename oldname  newname
+```
 # 2.6 标记
 ## 2.6.1 列举标签
 ## 2.6.2 创建标签
