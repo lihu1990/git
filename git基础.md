@@ -220,10 +220,29 @@ git remote rename oldname  newname
 ```
 # 2.6 标记
 ## 2.6.1 列举标签
+```java
+git tag 或
+git tag -l 'v1.*'
+```
 ## 2.6.2 创建标签
+```java
+推荐穿件注释标签[信息更完全]
+标签分为2类:注释标签[annotated]、轻量标签[lightweight]
+```
 ## 2.6.3 注释标签
+```java
+git tag -a v1.4 -m "my version 1.4"
+git tag
+git show tagname[v1.4] 查看标签数据以及对应的提交信息
+```
 ## 2.6.4 轻量标签
+```java
+git tag tagname
+```
 ## 2.6.5 补加标签
+```java
+
+```
 ## 2.6.6 共享标签
 ## 2.6.7 检出标签
 # 2.7 git别名
