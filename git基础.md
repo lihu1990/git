@@ -142,3 +142,7 @@ git log -p -2
 ![](static/pic/Snip20200131_17.png)
 
 # 2.4 撤销操作
+```java
+在提交时候忘记提交或写错了提交的信息，需要重新尝试提交【前提没有进行push上去】，可以使用--amend选项进行修改提交信息
+git commit --amend
+```
