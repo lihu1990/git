@@ -147,3 +147,19 @@ git log -p -2
 git commit --amend
 
 ```
+
+## 2.4.1 撤销已暂存的文件
+```java
+在实际的版本管理中，在管理工作区和暂存区的时候有时候会
+git add *
+导致有些文件错误提交到暂存区了，需要进行内容的撤销，如下图：
+```
+![](static/pic/Snip20200202_18.png)
+```java
+这里我错误的将a.t文件给提交到暂存区了，这个时候我想把a.t文件从暂存区移除，可以参考
+git reset HEAD <file>...
+因此我们按照提示
+git reset HEAD a.t
+如下图:
+```
+![](static/pic/Snip20200202_19.png)
