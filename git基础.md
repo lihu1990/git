@@ -241,8 +241,35 @@ git tag tagname
 ```
 ## 2.6.5 补加标签
 ```java
-
+git  log --pretty=online
+查找进行需要打标签的地方 
+git tag -a tagname[v1.1] 校验id或部分校验的id
+git tag v0.1 0c22eeb094fef8900556c8aa5cf9a1150ce9e608
 ```
+![](static/pic/Snip20200202_21.png)
+![](static/pic/Snip20200202_22.png)
 ## 2.6.6 共享标签
+```java
+默认情况下，git push 不会吧标签传输到远程服务器上。因此在创建了标签后，需要明确的将标签推送到共享服务器上。这个过程像推送分支一样
+git push origin [tagname]
+如果多个tag标签需要一次都推送的话
+git push origin --tags
+```
 ## 2.6.7 检出标签
+```java
+git无法真正的检出一个标签的，因为标签是无法移动的。如果想将某个版本的镜像放入到标签的工作目录中，可以使用
+git checkout -b [branchname] [tagname] 在特定的标签上穿件一个新的分支
+```
 # 2.7 git别名
+```java
+为了简化git的命令操作
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+比如移出暂存区
+git config --global alias.unstage 'reset HEAD --'
+git unstage fileA=git reset HEAD --fileA
+显示最后一次提交信息的命令
+git config --global alias.last 'log -1 HEAD'
+```
