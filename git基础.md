@@ -163,3 +163,12 @@ git reset HEAD a.t
 如下图:
 ```
 ![](static/pic/Snip20200202_19.png)
+
+## 2.4.2 撤销对文件的修改(危险操作，慎重使用)
+```java
+在实际的操作中，如果想要恢复到上个版本的状态，这个时候git status 会告诉你
+执行git checkout --<file>... 进行恢复到上个版本
+```
+![](static/pic/Snip20200202_20.png)
+
+# 2.5 远程仓库使用
