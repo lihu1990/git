@@ -27,7 +27,6 @@ git branch -d  分支名称
 git merge xxx
 ```
 ![](static/pic/threesection/Snip20200203_29.png)
-
 ## 3.2.3 基本的合并冲突处理
 ```java
 现在有2个分支 testing、master
@@ -51,7 +50,14 @@ git branch
 git branch -v
 ```
 ![](static/pic/threesection/Snip20200203_35.png)
-
-
+```java
+查看当前分支的所有已经合并过的分支
+git branch --merged
+查看当前分支所有未合并过的分支
+git branch --no-merged
+```
+![](static/pic/threesection/Snip20200203_36.png)
+![](static/pic/threesection/Snip20200203_37.png)
+![](static/pic/threesection/Snip20200203_38.png)
 
 
