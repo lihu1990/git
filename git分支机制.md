@@ -42,6 +42,15 @@ git merge testing
 ![](static/pic/threesection/Snip20200203_33.png)
 ![](static/pic/threesection/Snip20200203_34.png)
 
+# 3.3 分支管理
+```java
+查看本地的所有的分支
+git branch 
+* 表示当前工作分区所在分支【HEAD指向的分支】
+查看每个分支上的最新提交
+git branch -v
+```
+![](static/pic/threesection/Snip20200203_35.png)
 
 
 
