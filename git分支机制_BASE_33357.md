@@ -9,7 +9,6 @@
 ```java
 git branch testing(新分支的名称)
 ```
-![](static/pic/threesection/Snip20200203_28.png)
 ## 3.1.2 切换分支
 ```java
 git checkout testing
@@ -23,12 +22,6 @@ git merge 待合并过来的分支
 git branch -d  分支名称
 ```
 ## 3.2.2 基本的合并操作
-```java
-git merge xxx
-```
-![](static/pic/threesection/Snip20200203_29.png)
-
-## 3.2.3 基本的合并冲突处理
 
 
 
