@@ -29,6 +29,18 @@ git merge xxx
 ![](static/pic/threesection/Snip20200203_29.png)
 
 ## 3.2.3 基本的合并冲突处理
+```java
+现在有2个分支 testing、master
+2个上面都有git分支机制的修改，都提交到暂存了。
+现在在master合并testing分支的数据
+git merge testing
+会发生如下的情况
+```
+![](static/pic/threesection/Snip20200203_30.png)
+![](static/pic/threesection/Snip20200203_31.png)
+![](static/pic/threesection/Snip20200203_32.png)
+![](static/pic/threesection/Snip20200203_33.png)
+![](static/pic/threesection/Snip20200203_34.png)
 
 
 
