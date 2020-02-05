@@ -19,8 +19,10 @@ git checkout testing
 ## 3.2.1 基本的分支操作
 ```java
 git merge 待合并过来的分支
-合并后删除不需要的分支 
+合并后删除不需要的分支 【本地删除】
 git branch -d  分支名称
+删除远程服务器上的分支
+git push origin --delete 分支名称
 ```
 ## 3.2.2 基本的合并操作
 ```java
@@ -73,5 +75,23 @@ master分支只存放未定班的代码，即已经发布的版本或即将发�
 # 3.5 远程分支
 ```java
 远程分支是指直线远程仓库的分支的指针。这些指针存在于本地切无法被移动。当你与服务器进行任何网络通信时候，他们会自动更新。远程分支有点像书签，他们会提示你上一次链接服务器时远程仓库中每个分支的位置。
+远程仓库的表示形式:remote/branch,例如，如果你想查看上次与服务器通信是远程origin参考中的master分支的内容，就需要查看origin/master分支。假设和伙伴一起进行协同开发他们也推送到iss53分支上，你也修改了iss53分支上。服务器上指向的是origin/iss53分支。
+当要和服务器同步的时候，需要执行git fetch origin命令。会查询origin对应的服务器上本地尚未包含的数据。然后更新本地数据库。最后把origin/master指针移动到最新的位置上去。
+
+git clone -o aaa https://xxx
+这里 aaa 就是remote
 ```
+## 3.5.1 推送
+```java
+需要和别人共享分支上的成果的时候，需要把他推送到一个具有写权限的远程仓库。你的本地分支并不会自动同步到远程仓库，必须要显示第推送那些你想要与别人共享的分支。
+  假如你有一个分支需要与其他人协作开发，你可以按照之前推送第一个分支的方法推送它。 
+  git push (remote) (branch)
+  
+  git push origin testing 
+  查看所有的分支
+  git branch -a
+  删除远程分支
+  git push origin --delete testing
+```
+
 
