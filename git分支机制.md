@@ -94,4 +94,9 @@ git clone -o aaa https://xxx
   git push origin --delete testing
 ```
 
+## 3.5.2 跟踪分支
+
+```java
+git 默认情况下回自动创建一个跟踪分支。【远程服务器上的orgin/master分支】，除此之外你可以选择自己设置其他的跟踪分支。即执行 git checkout -b [buanch] [remotename]/[branch] 他的简写就是git checkout --track origin/serverfix
+```
 
