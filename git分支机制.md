@@ -99,4 +99,24 @@ git clone -o aaa https://xxx
 ```java
 git 默认情况下回自动创建一个跟踪分支。【远程服务器上的orgin/master分支】，除此之外你可以选择自己设置其他的跟踪分支。即执行 git checkout -b [buanch] [remotename]/[branch] 他的简写就是git checkout --track origin/serverfix
 ```
+## 3.5.3 拉取
+```java 
+git fetch m命令会拉去本地没有的远程的所有跟下更改数据，但这边条命令不会更改你的工作目录，他只会从服务器上读取数据，然后让你自己进行合并。除此之外，还有一个git pull命令。这条命令在大多数情况下基本等同于执行git fetch之后紧跟着执行了git merge。
+```
+## 3.5.4 删除远程分支
+git push origin --delete branchname
+
+## 3.6 变基
+```java
+在git中更改从一个分支整合到另一个分支。有两种方式:1、合并（merge） 2、变基(rebase)
+```
+### 3.6.1 基本操作的变基操作
+```java
+git  checkout aaaa
+切换到aaaa分支，可以进行将bbb分支代码合并到aaaa上依考补丁的形式
+git rebase master
+快速进行分支代码的合并
+git merge xxbranch
+```
+
 
