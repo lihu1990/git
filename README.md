@@ -4,11 +4,11 @@
 
 ## [0、安装必备软件](安装必备软件.md)
 
-## [1、Git基础安装和入门使用](git基础安装和入门使用.md)
+## [1、Git基础安装和入门使用](git-init-study.md)
 
-## [2、Git基础](git基础.md)
+## [2、Git基础](git-base.md)
 
-## [3、Git分支机制](git分支机制.md)
+## [3、Git分支机制](git-branch.md)
 
 
 

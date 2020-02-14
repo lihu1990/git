@@ -121,6 +121,16 @@ git rebase master
 git checkout master
 git merge branch
 ```
-### 3.6.2 
+### 3.6.2 更有趣的变基操作
+```java
+git rebase --onto master server client
+这里意思是
+找出所有server 和client的分支的内容，先提交两个的共同的祖先，在进行将client的在master上进行重现操作。
+````
+### 3.6.3 编辑操作存在的危害
+```java
+不要对已经提交到远程服务器上的公开提交进行编辑操作。
+```
+
 
 
