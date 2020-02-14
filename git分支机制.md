@@ -112,11 +112,15 @@ git push origin --delete branchname
 ```
 ### 3.6.1 基本操作的变基操作
 ```java
-git  checkout aaaa
-切换到aaaa分支，可以进行将bbb分支代码合并到aaaa上依考补丁的形式
+针对合并，很简单就是讲一个分支代码合并到领一个分支上
+git merge 待合并过来的分支
+另外一种是将其他分支的代码已打补丁的方式合并进来，这种操作叫变基操作。使用的是rebase命令。
+首先变更到 需要将分支合并到另一个分支的分支(这类操作会将所有的分支提交操作历史在另一个分支上重现)
+git checkout branch
 git rebase master
-快速进行分支代码的合并
-git merge xxbranch
+git checkout master
+git merge branch
 ```
+### 3.6.2 
 
 
