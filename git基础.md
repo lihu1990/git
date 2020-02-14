@@ -254,6 +254,12 @@ git tag v0.1 0c22eeb094fef8900556c8aa5cf9a1150ce9e608
 git push origin [tagname]
 如果多个tag标签需要一次都推送的话
 git push origin --tags
+删除远程服务器上的标签
+git push origin :refs/tags/标签名  
+列出标签
+git tag
+删除本地标签
+git tag -d 标签名  
 ```
 ## 2.6.7 检出标签
 ```java
