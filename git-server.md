@@ -21,3 +21,17 @@ git clone  /home/a/project.git
 ```java
 缺少用户验证机制!
 ```
+# 4.2 Gitweb
+```java
+mac下执行
+启动
+git instaweb --httpd=webrick
+关闭
+git instaweb --httpd=webrick --stop
+```
+# 4.3 GitLab
+```java
+更加友好的操作界面
+
+```
+[安装操作步骤](https://about.gitlab.com/install/)
