@@ -131,6 +131,16 @@ git rebase --onto master server client
 ```java
 不要对已经提交到远程服务器上的公开提交进行编辑操作。
 ```
-
+### 3.6.4 暂存修改的记录
+```java
+查看暂存列表
+git stash list
+暂存
+git stash save "commit info "
+获取 暂存【顺序pop】
+git stash pop
+获取指定的stash
+git stash apply stash@{numid}
+```
 
 
